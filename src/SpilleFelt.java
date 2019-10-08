@@ -19,25 +19,18 @@ public class SpilleFelt {
 
     public String hvorStort() {
         int areal = bredde * laengde;
-        if (areal>10) {return  "lille";}
+        if (areal<10) {return  "lille";}
 
-        if (areal<11) {return "mellem"; }
+      else if (areal<101) {return "mellem"; }
 
-        if (areal<101) {return "stort";}
-
-
-
-
-return "lille";
-
-
+        else  return "stort";
 
     }
 
 
 
     public String listGenstande() {
-        return null;
+        return "Spillefeltet indeholder en økse.";
     }
 
     public void setLokationsType(String ørken) {
